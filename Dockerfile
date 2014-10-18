@@ -6,6 +6,7 @@ RUN \
   su action -l -c /bin/bash -c \
   'rbenv install 2.1.2 && \
   rbenv global 2.1.2 && \
+  gem install bundler rails && \
   git clone https://github.com/ploslabs/rich_citations.git && \
   cd rich_citations && \
   bundle install && \
