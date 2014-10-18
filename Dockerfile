@@ -4,8 +4,8 @@ MAINTAINER Mike Chelen <michael.chelen@gmail.com>
 
 RUN \
   su action -l -c /bin/bash -c \
-  'rbenv install 2.1.3 && \
-  rbenv global 2.1.3 && \
+  'rbenv install 2.1.2 && \
+  rbenv global 2.1.2 && \
   git clone https://github.com/ploslabs/rich_citations.git && \
   cd rich_citations && \
   bundle install && \
