@@ -1,6 +1,9 @@
 FROM nitrousio/ruby:latest
 MAINTAINER Mike Chelen <michael.chelen@gmail.com>
 
+RUN \
+  apt-get install -y libpq-dev
+
 
 RUN \
   su action -l -c /bin/bash -c \
