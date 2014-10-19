@@ -23,4 +23,4 @@ WORKDIR \
   /home/action/rich_citations/
 
 CMD \
-  bundle exec rails server
+  source /etc/profile && bundle exec rails server
