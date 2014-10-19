@@ -14,5 +14,13 @@ RUN \
   cd rich_citations && \
   bundle install && \
   cp config/database.example.yml config/database.yml && \
-  bundle exec rake db:migrate && \
-  bundle exec rails server'
+  bundle exec rake db:migrate && \'
+  
+USER \
+  action
+  
+WORKDIR \
+  /home/action/rich_citations/
+
+CMD \
+  bundle exec rails server
